@@ -597,3 +597,164 @@ Image preprocessing and normalization
 Model training and evaluation
 Multi-class classification
 TensorFlow and Keras workflow
+
+
+
+
+
+
+
+
+# Week 7 - Advanced Image Classification 🚀
+
+## Overview
+
+This project demonstrates an advanced image classification pipeline using a Convolutional Neural Network (CNN) with data augmentation, batch normalization, and dropout.
+
+The model is trained on the Fashion-MNIST dataset to classify clothing images into 10 categories.
+
+---
+
+## Features
+
+- Fashion-MNIST dataset loading
+- Image normalization
+- Data augmentation
+- Deep CNN architecture
+- Batch Normalization
+- Dropout regularization
+- Model training and validation
+- Test set evaluation
+- Sample predictions
+- Trained model saving
+
+---
+
+## Technologies Used
+
+- Python
+- TensorFlow
+- Keras
+- NumPy
+
+---
+
+## Dataset
+
+The project uses the Fashion-MNIST dataset containing grayscale images of clothing items.
+
+### Classes
+
+- T-shirt/top
+- Trouser
+- Pullover
+- Dress
+- Coat
+- Sandal
+- Shirt
+- Sneaker
+- Bag
+- Ankle boot
+
+For lightweight training, the project uses:
+
+- **10,000 training images**
+- **2,000 testing images**
+- Image size: **28 × 28 pixels**
+
+---
+
+## Model Architecture
+
+```text
+Input (28 × 28 × 1)
+        ↓
+Data Augmentation
+        ↓
+Conv2D (32 filters)
+        ↓
+Batch Normalization
+        ↓
+MaxPooling
+        ↓
+Conv2D (64 filters)
+        ↓
+Batch Normalization
+        ↓
+MaxPooling
+        ↓
+Conv2D (128 filters)
+        ↓
+Batch Normalization
+        ↓
+Flatten
+        ↓
+Dense (128 neurons)
+        ↓
+Dropout (0.4)
+        ↓
+Dense (10 classes)
+
+Total Parameters: 897,802
+
+Advanced Techniques
+Data Augmentation
+
+The model applies:
+
+Random horizontal flipping
+Random rotation
+Random zoom
+Regularization
+
+Dropout and Batch Normalization are used to improve model generalization and training stability.
+
+Training
+Optimizer: Adam
+Learning Rate: 0.001
+Loss Function: Sparse Categorical Crossentropy
+Epochs: 5
+Batch Size: 64
+Validation Split: 10%
+Results
+Test Loss: 0.5362
+Test Accuracy: 81.25%
+
+The trained model achieved 81.25% test accuracy on the lightweight Fashion-MNIST test set.
+
+Sample Predictions
+1. Predicted: Ankle boot   Actual: Ankle boot
+2. Predicted: Pullover     Actual: Pullover
+3. Predicted: Trouser      Actual: Trouser
+4. Predicted: Trouser      Actual: Trouser
+5. Predicted: Shirt        Actual: Shirt
+6. Predicted: Trouser      Actual: Trouser
+7. Predicted: Shirt        Actual: Coat
+8. Predicted: Shirt        Actual: Shirt
+9. Predicted: Sandal       Actual: Sandal
+10. Predicted: Sneaker     Actual: Sneaker
+Project Structure
+Week-7-Advanced-Image-Classification/
+│
+├── outputs/
+│   └── advanced_fashion_classifier.keras
+│
+├── advanced_classifier.py
+├── requirements.txt
+└── README.md
+Installation
+pip install -r requirements.txt
+Run the Project
+python advanced_classifier.py
+
+The script trains the advanced CNN, evaluates the model, generates sample predictions, and saves the trained model in the outputs/ directory.
+
+Learning Outcomes
+Advanced CNN architecture
+Data augmentation
+Batch Normalization
+Dropout regularization
+Image preprocessing
+Model training and evaluation
+Multi-class image classification
+TensorFlow and Keras workflow

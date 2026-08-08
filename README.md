@@ -456,3 +456,144 @@ Computer vision fundamentals
 Content-based image retrieval
 Similarity search techniques
 Product recommendation concepts
+
+
+
+
+
+
+
+
+# Week 6 - Image Classification 👕🖼️
+
+## Overview
+
+This project demonstrates image classification using a Convolutional Neural Network (CNN) trained on the Fashion-MNIST dataset.
+
+The model classifies clothing images into 10 different categories using TensorFlow and Keras.
+
+---
+
+## Features
+
+- Fashion-MNIST dataset loading
+- Image normalization and preprocessing
+- CNN-based image classification
+- Model training and validation
+- Test set evaluation
+- Class prediction for sample images
+- Trained model saving
+
+---
+
+## Technologies Used
+
+- Python
+- TensorFlow
+- Keras
+- NumPy
+
+---
+
+## Dataset
+
+The project uses the **Fashion-MNIST** dataset containing grayscale images of clothing items.
+
+### Classes
+
+- T-shirt/top
+- Trouser
+- Pullover
+- Dress
+- Coat
+- Sandal
+- Shirt
+- Sneaker
+- Bag
+- Ankle boot
+
+For lightweight training, the project uses:
+
+- **10,000 training images**
+- **2,000 testing images**
+- Image size: **28 × 28 pixels**
+
+---
+
+## CNN Architecture
+
+The model consists of:
+
+```text
+Input (28 × 28 × 1)
+        ↓
+Conv2D (32 filters)
+        ↓
+MaxPooling2D
+        ↓
+Conv2D (64 filters)
+        ↓
+MaxPooling2D
+        ↓
+Flatten
+        ↓
+Dense (128 neurons)
+        ↓
+Dense (10 classes)
+
+Total Parameters: 225,034
+
+Training
+
+The model was trained using:
+
+Optimizer: Adam
+Loss Function: Sparse Categorical Crossentropy
+Epochs: 5
+Batch Size: 64
+Validation Split: 10%
+Results
+Test Loss: 0.3888
+Test Accuracy: 86.75%
+
+The trained CNN achieved 86.75% test accuracy on the lightweight Fashion-MNIST test set.
+
+Sample Predictions
+1. Predicted: Ankle boot   Actual: Ankle boot
+2. Predicted: Pullover     Actual: Pullover
+3. Predicted: Trouser      Actual: Trouser
+4. Predicted: Trouser      Actual: Trouser
+5. Predicted: Shirt        Actual: Shirt
+6. Predicted: Trouser      Actual: Trouser
+7. Predicted: Shirt        Actual: Coat
+8. Predicted: Shirt        Actual: Shirt
+9. Predicted: Sandal       Actual: Sandal
+10. Predicted: Sneaker      Actual: Sneaker
+Project Structure
+Week-6-Image-Classification/
+│
+├── dataset/
+│
+├── outputs/
+│   └── fashion_mnist_classifier.keras
+│
+├── image_classifier.py
+├── requirements.txt
+└── README.md
+Installation
+
+Install the required dependencies:
+
+pip install -r requirements.txt
+Run the Project
+python image_classifier.py
+
+The model will train, evaluate its performance, generate sample predictions, and save the trained model inside the outputs/ directory.
+
+Learning Outcomes
+Understanding image classification
+CNN architecture and convolution layers
+Image preprocessing and normalization
+Model training and evaluation
+Multi-class classification
+TensorFlow and Keras workflow

@@ -1,33 +1,45 @@
-# Week 1 - MNIST Image Classification
+# Week 1 - TensorFlow Fundamentals 🧠
 
-## Overview
-Built a handwritten digit classification model using TensorFlow and Keras.
+This week focuses on the fundamentals of TensorFlow and building a basic neural network for handwritten digit classification using the MNIST dataset.
 
-## Dataset
-- MNIST handwritten digits
-- Training: 60,000 images
-- Testing: 10,000 images
-- Image size: 28 × 28
+## 📚 Topics Covered
 
-## Model
-- Flatten layer
-- Dense layer: 128 neurons
-- Output layer: 10 classes
-- Optimizer: Adam
-- Epochs: 5
+- TensorFlow installation and environment setup
+- Tensor basics
+- Scalars, vectors, matrices and 3D tensors
+- Tensor shapes and data types
+- Tensor reshaping
+- Basic TensorFlow operations
+- Neural network fundamentals
+- MNIST handwritten digit classification
+- Model training and evaluation
+- Saving trained TensorFlow models
+- Generating predictions
 
-## Result
-**Test Accuracy: 97.64%**
+## 🛠️ Technologies Used
 
-## Project Structure
+- Python
+- TensorFlow
+- Keras
+- NumPy
+- Matplotlib
+
+## 📁 Project Structure
 
 ```text
 Week-1-TensorFlow/
-├── mnist/
-│   └── classifier.py
+│
+├── models/
+│   └── mnist_model.keras
+│
 ├── outputs/
+│   └── mnist_prediction.png
+│
+├── main.py
+├── tensor_basics.py
+├── mnist_classifier.py
 ├── requirements.txt
-
+└── README.md
 
 # Week 2 - Object Detection
 

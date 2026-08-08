@@ -242,3 +242,122 @@ outputs/yolo_detection.jpg
 🎓 Learning Outcome
 
 By completing this week, I gained hands-on experience with object detection concepts, bounding boxes, confidence scores, pretrained YOLO models, image processing with OpenCV, and generating annotated detection results.
+
+
+
+
+
+# Week 3 - Advanced Object Detection
+
+This project demonstrates advanced object detection using the YOLO
+(You Only Look Once) model with Python and OpenCV.
+
+## Objective
+
+The objective of this week is to extend basic object detection into
+an advanced detection pipeline using a pretrained YOLO model.
+
+## Approach
+
+The project uses:
+
+1. Pretrained YOLO11n model
+2. Image/video frame processing
+3. Object detection
+4. Object tracking using persistent detections
+5. Bounding box and tracking ID visualization
+
+## Project Structure
+
+```text
+Week-3-Advanced-Object-Detection/
+│
+├── advanced_detection.py
+├── requirements.txt
+├── images/
+├── videos/
+└── README.md
+Implementation
+
+The advanced_detection.py script:
+
+Loads the pretrained YOLO11n model
+Processes input frames
+Detects objects
+Performs tracking using YOLO tracking functionality
+Generates annotated frames
+Saves the processed output
+Technologies Used
+Python
+Ultralytics YOLO
+OpenCV
+NumPy
+
+
+
+
+
+
+
+
+# Week 4 - Product Image Search
+
+This project demonstrates a basic product image search system using
+computer vision and image feature similarity.
+
+## Objective
+
+The goal is to compare a query product image with a collection of
+product images and retrieve the most visually similar products.
+
+## Approach
+
+The system uses:
+
+1. Image resizing
+2. HSV color space conversion
+3. Color histogram feature extraction
+4. Histogram normalization
+5. Histogram correlation for similarity comparison
+6. Ranking products based on similarity score
+
+## Project Structure
+
+```text
+Week-4-Product-Image-Search/
+│
+├── images/
+│   ├── shoe1.jpg
+│   ├── shoe2.jpg
+│   ├── shoe3.jpg
+│   ├── bag1.jpg
+│   └── watch1.jpg
+│
+├── outputs/
+│
+├── product_search.py
+├── requirements.txt
+└── README.md
+How It Works
+
+A query image is selected from the product image collection.
+
+The image is converted to HSV format and a color histogram is
+generated as its visual feature representation.
+
+The same process is applied to the remaining product images.
+
+The histograms are compared using correlation similarity, and the
+products are ranked from highest to lowest similarity.
+
+Example Result
+
+Query Image:
+
+shoe1.jpg
+
+Top Similar Products:
+
+1. shoe3.jpg
+2. watch1.jpg
+3. bag1.jpg

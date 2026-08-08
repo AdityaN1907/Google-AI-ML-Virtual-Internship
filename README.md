@@ -49,7 +49,7 @@ Week-1-TensorFlow/
 ├── tensor_basics.py
 ├── mnist_classifier.py
 ├── requirements.txt
-└── README.md
+
 ```
 
 ---
@@ -92,7 +92,6 @@ Week-2-Object-Detection/
 ├── object_detection.py
 ├── yolo_detection.py
 ├── requirements.txt
-└── README.md
 ```
 
 ---
@@ -131,7 +130,6 @@ Week-3-Advanced-Object-Detection/
 ├── outputs/
 ├── advanced_detection.py
 ├── requirements.txt
-└── README.md
 ```
 
 ---
@@ -163,7 +161,6 @@ Week-4-Product-Image-Search/
 ├── outputs/
 ├── product_search.py
 ├── requirements.txt
-└── README.md
 ```
 
 ---
@@ -225,7 +222,6 @@ Week-5-Advanced-Product-Search/
 ├── outputs/
 ├── advanced_product_search.py
 ├── requirements.txt
-└── README.md
 ```
 
 ---
@@ -309,7 +305,6 @@ Week-6-Image-Classification/
 ├── outputs/
 ├── image_classifier.py
 ├── requirements.txt
-└── README.md
 ```
 
 ---
@@ -408,7 +403,6 @@ Week-7-Advanced-Image-Classification/
 ├── outputs/
 ├── advanced_classifier.py
 ├── requirements.txt
-└── README.md
 ```
 
 ---

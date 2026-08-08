@@ -361,3 +361,98 @@ Top Similar Products:
 1. shoe3.jpg
 2. watch1.jpg
 3. bag1.jpg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Week 5 - Advanced Product Image Search 🔍🛍️
+
+## Overview
+
+This project demonstrates an advanced product image search system using computer vision techniques. The application extracts visual features from product images and identifies the most similar products based on feature similarity.
+
+The system uses OpenCV for image processing and Scikit-Learn for cosine similarity matching.
+
+---
+
+## Features
+
+- Product image feature extraction
+- HSV color histogram generation
+- Feature vector comparison
+- Cosine similarity matching
+- Top-K similar product retrieval
+- Fast image-based product search
+
+---
+
+## Technologies Used
+
+- Python
+- OpenCV
+- NumPy
+- Scikit-Learn
+
+---
+
+## Project Structure
+
+```text
+Week-5-Advanced-Product-Search/
+│
+├── images/
+│   ├── shoe1.jpg
+│   ├── shoe2.jpg
+│   ├── shoe3.jpg
+│   ├── bag1.jpg
+│   └── watch1.jpg
+│
+├── outputs/
+│
+├── advanced_product_search.py
+├── requirements.txt
+└── README.md
+How It Works
+Load all product images.
+Extract HSV color histogram features.
+Convert histograms into feature vectors.
+Compare the query image with all products.
+Calculate cosine similarity scores.
+Rank products based on similarity.
+Display the most similar products.
+Sample Output
+Week 5 - Advanced Product Image Search
+
+Query Image:
+shoe1.jpg
+
+Top Similar Products:
+
+1. bag1.jpg - Similarity: 0.0006
+2. shoe3.jpg - Similarity: 0.0003
+3. watch1.jpg - Similarity: 0.0002
+
+Advanced product search completed!
+Installation
+pip install -r requirements.txt
+Run
+python advanced_product_search.py
+Learning Outcomes
+Image feature extraction
+Computer vision fundamentals
+Content-based image retrieval
+Similarity search techniques
+Product recommendation concepts
